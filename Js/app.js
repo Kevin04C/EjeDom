@@ -1,6 +1,5 @@
 import hamburgerMenu from "./menu_hamburguesa.js";
 import {digitalClock, alarm} from "./reloj.js";
-import {shortcuts} from "./reloj.js";
 
 let body = document.querySelector('.body');
 let btnDark = document.getElementById('btnDark'); 

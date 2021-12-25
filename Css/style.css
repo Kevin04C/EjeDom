@@ -21,9 +21,6 @@ body {
   margin: 0;
   overflow-x: hidden;
   height: auto;
- /* -------------------- */
-  background-color: #222;
-  color: #fff;
 }
 /* menu hamburgesa */
 .header {
