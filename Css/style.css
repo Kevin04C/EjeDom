@@ -21,6 +21,9 @@ body {
   margin: 0;
   overflow-x: hidden;
   height: auto;
+  /* ------------- */
+  background: #222;
+  color: #fff;
 }
 /* menu hamburgesa */
 .header {
@@ -142,3 +145,17 @@ body {
   background: #222;
   color: #fff;
 }
+/* EVENTOS DEL TECLADO */
+.stage{
+  display: flex;
+  min-height: 50vh;
+  background: var(--main-color);
+}
+.ball{
+  height: 4rem;
+  width: 4rem;
+  background-color: var(--second-color);
+  border-radius: 50%;
+  margin: auto;
+}
+  

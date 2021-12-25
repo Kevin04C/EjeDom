@@ -6,7 +6,7 @@ export default function hamburgerMenu(panelBoton, panel, menuLink) {
     }
     if (e.target.matches(menuLink)) {
       document.querySelector(panel).classList.remove("is-active");
-      
+      document.querySelector(panelBoton).classList.remove("is-active");
     }
   });
 }
