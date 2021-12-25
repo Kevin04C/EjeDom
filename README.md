@@ -1,1 +1,2 @@
-# EjeDom
+# Ejercicios con el DOM JavaScript.
+
