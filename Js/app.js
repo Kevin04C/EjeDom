@@ -1,6 +1,6 @@
 import hamburgerMenu from "./menu_hamburguesa.js";
 import {digitalClock, alarm} from "./reloj.js";
-import {shortcuts} from "./shortcuts.js";
+import {shortcuts, moveBall} from "./teclado.js";
 
 let body = document.querySelector('.body');
 let btnDark = document.getElementById('btnDark'); 
@@ -20,6 +20,7 @@ btnDark.addEventListener('click',(e)=>{
 
 document.addEventListener('keydown',(e)=>{
     shortcuts(e);
+    moveBall(e,'.ball','.stage');
 })
 
 

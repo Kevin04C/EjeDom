@@ -6,6 +6,7 @@ export function digitalClock(clock,btnPlay,btnStop) {
                 let clockHour = new Date().toLocaleTimeString();
                 document.querySelector(clock).innerHTML = `<h3>${clockHour}</h3>`
             }, 1000);
+            document.querySelector(btnPlay).disabled = true;
         }
         if(e.target.matches(btnStop)){
             clearInterval(clockTempo);
@@ -26,10 +27,13 @@ export function alarm(sound,btnPlay,btnStop) {
             alarmatempo = setTimeout(() => {
                 alarm.play();
             },2000);
+            document.querySelector(btnPlay).disabled = true;
         }
         if (e.target.matches(btnStop)) {
             alarm.pause();
             alarm.currentTime = 0;
+            document.querySelector(btnPlay).disabled = false;
+
         }
     })
 }
