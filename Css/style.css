@@ -1,0 +1,147 @@
+:root {
+  --maint-font: sans-serif;
+  --font-size: 16px;
+  --main-color: #f7df1e;
+  --second-color: #222;
+  --main-modal-color: rgba(274, 222, 30, 0.85);
+  --second-modal-color: rgba(34, 34, 34, 0.85);
+  --container-width: 1200px;
+}
+html {
+  box-sizing: border-box;
+  font-family: var(--maint-font);
+  scroll-behavior: smooth;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+  height: auto;
+ /* -------------------- */
+  background-color: #222;
+  color: #fff;
+}
+/* menu hamburgesa */
+.header {
+  position: static;
+  background-color: var(--main-color);
+  padding: 1rem;
+  color: var(--second-color);
+}
+.header h1 {
+  margin: 0;
+  text-align: center;
+}
+.seccion {
+  padding: 2rem;
+  left: auto;
+  right: auto;
+  width: 100%;
+  max-height: var(--container-width);
+  min-height: 100vh;
+  text-align: center;
+}
+.panel {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  z-index: 998;
+  width: 100%;
+  bottom: 0;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--second-modal-color);
+  transform: translate(-100%, 0);
+  transition: transform .5s ease; 
+}
+.panel.is-active {
+  transform: translate(0, 0);
+}
+.menu {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+}
+.menu a {
+  padding: 2rem;
+  width: inherit;
+  display: block;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--main-color);
+  transition: all 0.3s ease-in-out;
+}
+.menu a:hover {
+  font-weight: bold;
+  color: var(--second-color);
+  background-color: var(--main-modal-color);
+}
+
+.panel-btn {
+  position: fixed;
+  z-index: 999;
+  right: 1vw;
+  bottom: 1vh;  
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+}
+/* BUTTONS RELOK */
+.container-button{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+#activar-reloj,
+#activar-alarma,
+#desactivar-reloj,
+#desactivar-alarma{
+  padding: 10px 15px;
+  border: none;
+  font-weight: bold;
+  background: rgb(83, 209, 67);
+  border-radius: 5px;
+  color: white;
+
+}
+.btn:hover{
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .3);
+}
+#desactivar-reloj,
+#desactivar-alarma{
+  background: #f20
+}
+
+/* btn moon */
+.container-moon{
+  position: fixed;
+  right: 1vw;
+  bottom: 13.5vh;  
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+.container-moon:hover{
+  background: rgb(235, 233, 233);
+}
+.background-active{
+  background: #222;
+  color: #fff;
+}
