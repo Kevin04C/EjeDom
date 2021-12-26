@@ -16,12 +16,15 @@ document.addEventListener('DOMContentLoaded',(e)=>{
 btnDark.addEventListener('click',(e)=>{
     body.classList.toggle('background-active');
     
-})
+});
 
-document.addEventListener('keydown',(e)=>{
+document.addEventListener('keypress',(e)=>{
     shortcuts(e);
     moveBall(e,'.ball','.stage');
-})
+});
+
+
+
 
 
 

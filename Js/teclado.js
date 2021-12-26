@@ -5,9 +5,6 @@ export function moveBall(e, ball, stage) {
   const $stage = document.querySelector(stage);
   const limitsBall = $ball.getBoundingClientRect();
   const limitsStage = $stage.getBoundingClientRect();
-
-  console.log(limitsBall);
-  console.log(limitsStage);
   switch (e.keyCode) {
     case 37:
       // Izquierda
