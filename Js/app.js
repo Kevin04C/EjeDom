@@ -1,4 +1,4 @@
-import countdown from "../cuenta_regresiva.js";
+import countdown from "./cuenta_regresiva.js";
 import hamburgerMenu from "./menu_hamburguesa.js";
 import { digitalClock, alarm } from "./reloj.js";
 import { shortcuts, moveBall } from "./teclado.js";
