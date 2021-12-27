@@ -6,33 +6,29 @@ export function moveBall(e, ball, stage) {
   const limitsBall = $ball.getBoundingClientRect();
   const limitsStage = $stage.getBoundingClientRect();
   switch (e.keyCode) {
-    case 37:
+    case 97:
       // Izquierda
       if (limitsBall.left > limitsStage.left) {
         x--;
       }
-      e.preventDefault();
       break;
-    case 38:
+    case 119:
       // Arriba
       if (limitsBall.top > limitsStage.top) {
         y--;
       }
-      e.preventDefault();
       break;
-    case 39:
+    case 100:
       // Derecha
       if (limitsBall.right < limitsStage.right) {
         x++;
       }
-      e.preventDefault();
       break;
-    case 40:
+    case 115:
       // Abajo
       if (limitsBall.bottom < limitsStage.bottom) {
         y++;
       }
-      e.preventDefault();
       break;
   }
   $ball.style.transform = `translate(${x * 10}px, ${y * 10}px)`;
