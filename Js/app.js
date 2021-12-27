@@ -22,7 +22,3 @@ document.addEventListener("keypress", (e) => {
   shortcuts(e);
   moveBall(e, ".ball", ".stage");
 });
-let contI = document.querySelector('.moon'); 
-let btnDark = document.getElementById("btnDark");
-btnDark.addEventListener('click',(e)=>{
-})
