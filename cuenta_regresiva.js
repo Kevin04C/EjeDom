@@ -4,6 +4,8 @@ export default function countdown(id, limitDate, finalMessage) {
 
   setInterval(() => {
     let now = new Date().getTime();
+
+    //restamos el tiempo, el actual menos el que nos paso el usuario.
     let limitTime = countdownDate - now;
     //Convetimos el tiempo de la variable (limitTime) a dias
     let day = Math.floor(limitTime / (1000 * 60 * 60 * 24));
@@ -14,13 +16,14 @@ export default function countdown(id, limitDate, finalMessage) {
     let minutes = (
       "0" + Math.floor((limitTime % (1000 * 60 * 60)) / (1000 * 60))
     ).slice(-2);
-    let seconds = (
-      "0" + Math.floor((limitTime % (1000 * 60)) / (1000))
-    ).slice(-2);
+
+    let seconds = ("0" + Math.floor((limitTime % (1000 * 60)) / 1000)).slice(
+      -2
+    );
 
     divCountdown.innerHTML = `<h3> Faltan: ${day} días ${hours} horas ${minutes} minutos ${seconds} segundos</h3>`;
     if (limitTime < 0) {
-      divCountdown.innerHTML = `<h3>${finalMessage}</h3>`
+      divCountdown.innerHTML = `<h3>${finalMessage}</h3>`;
     }
   }, 1000);
 }
