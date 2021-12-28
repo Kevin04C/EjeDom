@@ -75,6 +75,7 @@ body {
   font-size: 1.5rem;
   text-decoration: none;
   color: var(--main-color);
+  background-color: var(--second-color);
   transition: all 0.3s ease-in-out;
 }
 .menu a:hover {
