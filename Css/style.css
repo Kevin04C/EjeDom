@@ -187,3 +187,26 @@ body {
   background-color: var(--second-color);
   color: var(--main-color);
 }
+/* ESTILOS JAVASCRIPT RESPONSIVE */
+#youtube{
+  margin-bottom: 25px;
+}
+a{
+  color: var(--second-color);
+  padding: 10px 15px;
+  font-weight: bold;
+  text-decoration: none;
+  background: var(--main-color);
+  border-radius: 10px;
+}
+
+/* CODIGO RESPONSIVE CELULARES DE 320PX A 4800PX */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .scroll-top{
+    right: .8vh;
+    bottom: 5rem;
+    height: 4rem;
+    width: 4rem;
+    margin-bottom: 25px;
+  }
+}

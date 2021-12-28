@@ -2,18 +2,18 @@
 <html lang="es" data-dark>
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
-  <link rel="shortcut icon" href="assets/js.ico" type="image/x-icon">
-  <link rel="stylesheet" href=" Css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css" />
+  <link rel="shortcut icon" href="assets/js.ico" type="image/x-icon" />
+  <link rel="stylesheet" href=" Css/style.css" />
   <title>JavaScript</title>
 </head>
 
 <body data-dark>
-  <header class=" header">
+  <header class="header">
     <h1>JavaScript</h1>
   </header>
   <audio src="assets/alarma.mp3"></audio>
@@ -24,18 +24,20 @@
   </button>
   <button class="container-moon" id="btnDark">🌙</button>
   <button class="scroll-top hidden">&#11014;</button>
+  <!-- PANEL DEL BTN HAMBURGUESA -->
   <aside class="panel">
     <nav class="menu">
       <a href="#seccion1">Iniciar Reloj</a>
       <a href="#seccion2">Eventos del teclado</a>
       <a href="#seccion3">Cuenta Regresiva </a>
-      <a href="#seccion4">Section4</a>
+      <a href="#seccion4">Responsive con JavaScript</a>
       <a href="#seccion5">Section5</a>
     </nav>
   </aside>
+  <!-- MAIN -->
   <main>
     <section id="seccion1" class="seccion">
-      <h2 style="margin-bottom: 25px;">Reloj Digital y Alarma Sonora</h2>
+      <h2 style="margin-bottom: 25px">Reloj Digital y Alarma Sonora</h2>
       <div id="reloj"></div>
       <div class="container-button">
         <button id="activar-reloj" class="btn">Iniciar Reloj</button>
@@ -55,12 +57,13 @@
       <div class="" id="countdown"></div>
     </section>
     <section id="seccion4" class="seccion">
-      <h2>seccion4</h2>
+      <h2>Responsive con JavaScript</h2>
+      <div id="youtube"></div>
+      <div id="gmaps"></div>
     </section>
     <section id="seccion5" class="seccion">
       <h2>seccion5</h2>
     </section>
-
   </main>
   <script src="Js/app.js" type="module"></script>
 </body>
