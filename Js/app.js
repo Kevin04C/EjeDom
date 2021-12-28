@@ -15,10 +15,11 @@ document.addEventListener("DOMContentLoaded", (e) => {
     "Feliz Año Nuevo 🎁❤️!!"
   );
   scrollTopButtom(".scroll-top");
-  darkMode(".container-moon","dark-mode");
 });
 
 document.addEventListener("keypress", (e) => {
   shortcuts(e);
   moveBall(e, ".ball", ".stage");
 });
+
+darkMode(".container-moon","dark-mode");

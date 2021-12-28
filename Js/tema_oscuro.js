@@ -3,22 +3,42 @@ export default function darkMode(btn, classDark) {
   const $selectors = document.querySelectorAll("[data-dark]");
   let moon = "🌙";
   let sun = "☀️";
-  console.log($btn.textContent);
-  console.log($btn.textContent === moon);
+
+  let darkMode = () => {
+    $selectors.forEach((element) => {
+      element.classList.add(classDark);
+      $btn.innerHTML = sun;
+      localStorage.setItem("theme", "dark")
+    });
+  };
+  let lightMode = () => {
+    $selectors.forEach((element) => {
+      element.classList.remove(classDark);
+      $btn.innerHTML = moon;
+      localStorage.setItem("theme", "light")
+    });
+  };
 
   document.addEventListener("click", (e) => {
     if (e.target.matches(btn)) {
       if ($btn.textContent === moon) {
-        $selectors.forEach((element) => {
-          element.classList.add(classDark);
-          $btn.innerHTML = sun;
-        });
+        darkMode();
       } else {
-        $selectors.forEach((element) => {
-          element.classList.remove(classDark);
-          $btn.innerHTML = moon;
-        });
+        lightMode();
       }
     }
+  });
+  document.addEventListener("DOMContentLoaded", (e) => {
+    if (localStorage.getItem("theme") === null) {
+        localStorage.setItem("theme", "light");
+        
+    }
+    if (localStorage.getItem("theme")==="light") {
+      lightMode();
+    }
+    if (localStorage.getItem("theme")==="dark") {
+      darkMode();
+    }
+    
   });
 }
