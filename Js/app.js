@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
   alarm("assets/alarma.mp3", "#activar-alarma", "#desactivar-alarma");
   countdown(
     "countdown",
-    "December 31, 2021 00:00:00",
+    "December 31, 2021 23:59:59",
     "Feliz Año Nuevo 🎁❤️!!"
   );
   scrollTopButtom(".scroll-top");
