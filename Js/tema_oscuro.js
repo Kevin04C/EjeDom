@@ -8,14 +8,14 @@ export default function darkMode(btn, classDark) {
     $selectors.forEach((element) => {
       element.classList.add(classDark);
       $btn.innerHTML = sun;
-      localStorage.setItem("theme", "dark")
+      localStorage.setItem("theme", "dark");
     });
   };
   let lightMode = () => {
     $selectors.forEach((element) => {
       element.classList.remove(classDark);
       $btn.innerHTML = moon;
-      localStorage.setItem("theme", "light")
+      localStorage.setItem("theme", "light");
     });
   };
 
@@ -28,17 +28,16 @@ export default function darkMode(btn, classDark) {
       }
     }
   });
+
   document.addEventListener("DOMContentLoaded", (e) => {
-    if (localStorage.getItem("theme") === null) {
-        localStorage.setItem("theme", "light");
-        
+    if (localStorage.getItem("theme") == null) {
+      localStorage.setItem("theme", "light");
     }
-    if (localStorage.getItem("theme")==="light") {
+    if (localStorage.getItem("theme") == "light") {
       lightMode();
     }
-    if (localStorage.getItem("theme")==="dark") {
+    if (localStorage.getItem("theme") == "dark") {
       darkMode();
     }
-    
   });
 }
