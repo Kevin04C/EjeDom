@@ -4,7 +4,7 @@ export default function responsiveTester(form) {
   document.addEventListener("submit", (e) => {
     if (e.target === $form) {
       e.preventDefault();
-      tester = window.open($form.direccion.value);
+      tester = window.open($form.direccion.value,"tester",` innerWidth=${$form.ancho.value}, innerHeight=${$form.alto.value}`);
     }
   });
   document.addEventListener("click", (e) => {
