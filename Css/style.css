@@ -64,9 +64,10 @@ body {
   width: inherit;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   text-align: center;
   align-items: center;
+  overflow-y: scroll;
 }
 .menu a {
   padding: 2rem;
@@ -200,6 +201,22 @@ a{
   background: var(--main-color);
   border-radius: 10px;
 }
+/* FORMULARIO */
+/* .form{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  padding: 50px 80px;
+  background-color: #111;
+  border-radius: 10px;
+}
+.form__input{
+  border: none;
+  outline: none;
+  min-height: 45px;
+} */
 
 /* CODIGO RESPONSIVE CELULARES DE 320PX A 4800PX */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
