@@ -32,7 +32,7 @@ export default function userDevaiceInfo(id) {
   <ul>
     <li>${navigator.userAgent}</li>
     <li>
-    <h3>Dispositivo: <b style="color: orange;"> ${isMobile.any()? isMobile.any() : isDesktop.any()}</b</h3>
+    <h3>Dispositivo: < style="color: orange;"> ${isMobile.any()? isMobile.any() : isDesktop.any()}</h3>
     </li>
   </ul>
   `
