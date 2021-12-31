@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
   countdown(
     "countdown",
     "December 31, 2021 23:59:59",
-    "Feliz Año Nuevo 🎁❤️!!"
+    "Feliz Año Nuevo PUTOSSSSS🎁❤️!!"
   );
   scrollTopButtom(".scroll-top");
   responsiveMedia(
