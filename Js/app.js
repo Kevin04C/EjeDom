@@ -7,6 +7,7 @@ import darkMode from "./tema_oscuro.js";
 import responsiveMedia from "./objeto_responsive.js";
 import responsiveTester from "./responsive_tester.js";
 import userDevaiceInfo from "./deteccion_dispositivos.js";
+import deteccionConexion from "./deteccion_conexion.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   hamburgerMenu(".panel-btn", ".panel", ".menu a");
@@ -33,6 +34,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
   );
   responsiveTester("responsive-tester");
   userDevaiceInfo("user-device");
+  deteccionConexion();
 });
 
 document.addEventListener("keypress", (e) => {
@@ -41,3 +43,4 @@ document.addEventListener("keypress", (e) => {
 });
 darkMode(".container-moon", "dark-mode");
 
+console.log(window.MediaDevices);

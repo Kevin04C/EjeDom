@@ -33,7 +33,6 @@ export default function userDevaiceInfo(id) {
             );
         },
     };
-    console.log(isDesktop.window());
     const $id = document.getElementById(id);
     $id.innerHTML = `
   <ul>

@@ -201,24 +201,22 @@ a{
   background: var(--main-color);
   border-radius: 10px;
 }
-/* FORMULARIO */
-/* .form{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  width: 50%;
-  margin: 0 auto;
-  padding: 50px 80px;
-  background-color: #111;
-  border-radius: 10px;
+.offline,
+.online{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-size: 1.5 rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #1b5e20;
+  color: #fff;
+  padding: 1.2rem;
 }
-.form__input{
-  border: none;
-  outline: none;
-  min-height: 45px;
-} */
-
-/* CODIGO RESPONSIVE CELULARES DE 320PX A 4800PX */
+.offline{
+  color: #b71c1c;
+}
+/* RESPONSIVE PARA CELULARES DE 320PX A 4800PX */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .scroll-top{
     right: .8vh;

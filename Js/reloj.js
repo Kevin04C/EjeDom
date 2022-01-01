@@ -33,6 +33,7 @@ export function alarm(sound,btnPlay,btnStop) {
             alarm.pause();
             alarm.currentTime = 0;
             document.querySelector(btnPlay).disabled = false;
+            
 
         }
     })
