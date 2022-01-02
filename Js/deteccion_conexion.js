@@ -13,7 +13,7 @@ export default function deteccionConexion() {
         document.body.insertAdjacentElement("afterbegin", $div);
         setTimeout(() => {
             document.body.removeChild($div);
-        }, 5000);
+        }, 2000);
     }
     isOnline();
 }

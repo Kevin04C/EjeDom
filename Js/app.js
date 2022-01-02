@@ -8,6 +8,7 @@ import responsiveMedia from "./objeto_responsive.js";
 import responsiveTester from "./responsive_tester.js";
 import userDevaiceInfo from "./deteccion_dispositivos.js";
 import deteccionConexion from "./deteccion_conexion.js";
+import Webcam from "./detecion_webcam.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   hamburgerMenu(".panel-btn", ".panel", ".menu a");
@@ -15,7 +16,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
   alarm("assets/alarma.mp3", "#activar-alarma", "#desactivar-alarma");
   countdown(
     "countdown",
-    "December 31, 2021 23:59:59",
+    "April 12, 2022 00:59:59",
     "Feliz Año Nuevo PUTOSSSSS🎁❤️!!"
   );
   scrollTopButtom(".scroll-top");
@@ -35,6 +36,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
   responsiveTester("responsive-tester");
   userDevaiceInfo("user-device");
   deteccionConexion();
+  Webcam('webcam');
 });
 
 document.addEventListener("keypress", (e) => {
@@ -42,5 +44,3 @@ document.addEventListener("keypress", (e) => {
   moveBall(e, ".ball", ".stage");
 });
 darkMode(".container-moon", "dark-mode");
-
-console.log(window.MediaDevices);

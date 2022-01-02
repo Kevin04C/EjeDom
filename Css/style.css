@@ -71,6 +71,7 @@ body {
 }
 .menu a {
   padding: 2rem;
+  border-radius: 0;
   width: inherit;
   display: block;
   font-size: 1.5rem;
