@@ -8,7 +8,7 @@ import responsiveMedia from "./objeto_responsive.js";
 import responsiveTester from "./responsive_tester.js";
 import userDevaiceInfo from "./deteccion_dispositivos.js";
 import deteccionConexion from "./deteccion_conexion.js";
-// import Webcam from "./detecion_webcam.js";
+import Webcam from "./detecion_webcam.js";
 import getGeolocation from "./gecalizacion.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
   responsiveTester("responsive-tester");
   userDevaiceInfo("user-device");
   deteccionConexion();
-  // Webcam("webcam");
+  Webcam("webcam");
   getGeolocation('geolocation')
 });
 
