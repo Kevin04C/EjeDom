@@ -15,7 +15,7 @@ export default function Webcam(id) {
       .catch((e) => {
         $video.insertAdjacentHTML(
           "beforebegin",
-          `<p> <mark>Sucecdio el siguiente error ${e}</mark></p>`
+          `<p> <mark>Sucedio el siguiente error ${e}</mark></p>`
         );
         console.log(`¡Error! ${e}`);
       });
