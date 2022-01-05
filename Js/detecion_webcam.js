@@ -8,9 +8,9 @@ export default function Webcam(id) {
         video: { width: { ideal: 600 }, height: { ideal: 500 } },
       })
       .then((stream) => {
-        console.log(stream);
         $video.srcObject = stream;
         $video.play();
+        console.log(stream);
       })
       .catch((e) => {
         $video.insertAdjacentHTML(

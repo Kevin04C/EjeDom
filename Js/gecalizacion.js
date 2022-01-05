@@ -12,7 +12,7 @@ export default function getGeolocation(id) {
     <p style="font-size: 18px;">Latitude: ${coords.latitude}</p>
     <p style="font-size: 18px;">Logitude: ${coords.longitude}</p>
     <p style="font-size: 18px;">Presición: <b>${coords.accuracy} Metros</b></p>
-    <a href="https://www.google.com/maps/@${coords.latitude},${coords.longitude}" target="_BLANK">Ver en Google Maps</a>
+    <a href="https://www.google.com/maps/@${coords.latitude},${coords.longitude}" target="_BLANK" rel="noopener">Ver en Google Maps</a>
     `;
     console.log(position)
   };
@@ -20,4 +20,5 @@ export default function getGeolocation(id) {
     $geolocation.innerHTML = `Ups! error code ${err.code}, ${err.message}`
   };
   navigator.geolocation.getCurrentPosition(success, err, options);
+
 }
