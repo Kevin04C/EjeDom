@@ -245,6 +245,22 @@ figcaption{
   opacity: 0;
   order: 1;
 }
+#btn_sorteo{
+  background-color: var(--main-color);
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-weight: 700;
+}
+.card-filter{
+  width: 80%;
+  margin: auto;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
 
 /* RESPONSIVE PARA CELULARES DE 320PX A 4800PX */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {

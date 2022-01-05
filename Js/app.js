@@ -11,6 +11,7 @@ import deteccionConexion from "./deteccion_conexion.js";
 import Webcam from "./detecion_webcam.js";
 import getGeolocation from "./gecalizacion.js";
 import searchFilter from "./filtro_busquedas.js";
+import sorteo from "./sorteo_digital.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   hamburgerMenu(".panel-btn", ".panel", ".menu a");
@@ -41,6 +42,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
   Webcam("webcam");
   getGeolocation('geolocation')
   searchFilter('.card-filter','.card');
+  sorteo('#btn_sorteo','.player');
 });
 
 document.addEventListener("keypress", (e) => {
