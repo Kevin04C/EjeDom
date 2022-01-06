@@ -261,8 +261,8 @@ figcaption {
 /*---------- Slider Responsive -----------*/
 .slider {
   position: relative;
-  width: 100%;
-  margin: 1rem auto;
+  width: 55%;
+  margin: 2rem auto;
   text-align: center;
 }
 .slider-slides {
@@ -320,5 +320,12 @@ figcaption {
     height: 4rem;
     width: 4rem;
   }
+  .slider {
+    position: relative;
+    width: 100%;
+    margin: 1rem auto;
+    text-align: center;
+  }
   
 }
+
