@@ -53,3 +53,10 @@ document.addEventListener("keypress", (e) => {
 });
 darkMode(".container-moon", "dark-mode");
 
+function showCoords(event){
+  alert(
+    "clientX value: " + event.clientX + "\n" +
+    "clientY value: " + event.clientY + "\n"
+  );
+}
+

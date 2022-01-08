@@ -3,7 +3,6 @@ export default function slider() {
   const prev = document.querySelector(".slider-btns .prev");
   const sliders = document.querySelectorAll(".slider-slide");
   let i = 0;
-  console.log(sliders);
   document.addEventListener("click", (e) => {
     if (e.target === prev) {
       e.preventDefault();
