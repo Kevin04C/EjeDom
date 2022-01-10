@@ -13,6 +13,8 @@ import getGeolocation from "./gecalizacion.js";
 import searchFilter from "./filtro_busquedas.js";
 import sorteo from "./sorteo_digital.js";
 import slider from "./carrusel.js";
+import scrollSpy from "./scroll_espia.js";
+import videoInteligente from "./video_inteligente.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   hamburgerMenu(".panel-btn", ".panel", ".menu a");
@@ -41,10 +43,12 @@ document.addEventListener("DOMContentLoaded", (e) => {
   userDevaiceInfo("user-device");
   deteccionConexion();
   Webcam("webcam");
-  getGeolocation('geolocation')
-  searchFilter('.card-filter','.card');
-  sorteo('#btn_sorteo','.player');
+  getGeolocation("geolocation");
+  searchFilter(".card-filter", ".card");
+  sorteo("#btn_sorteo", ".player");
   slider();
+  scrollSpy();
+  videoInteligente(); 
 });
 
 document.addEventListener("keypress", (e) => {
@@ -52,11 +56,3 @@ document.addEventListener("keypress", (e) => {
   moveBall(e, ".ball", ".stage");
 });
 darkMode(".container-moon", "dark-mode");
-
-function showCoords(event){
-  alert(
-    "clientX value: " + event.clientX + "\n" +
-    "clientY value: " + event.clientY + "\n"
-  );
-}
-

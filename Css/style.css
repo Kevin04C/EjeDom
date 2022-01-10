@@ -23,10 +23,13 @@ body {
 }
 /* menu hamburgesa */
 .header {
-  position: static;
+  position: fixed;
+  width: 100%;
+  z-index: 997;
   background-color: var(--main-color);
   padding: 1rem;
   color: var(--second-color);
+  margin-bottom: 2rem;
 }
 .header h1 {
   margin: 0;
@@ -37,10 +40,20 @@ body {
   left: auto;
   right: auto;
   width: 100%;
-  /* max-height: var(--container-width);
-  min-height: 100vh; */
   text-align: center;
 }
+#seccion1,
+#seccion2,
+#seccion3,
+#seccion4,
+#seccion5,
+#seccion6,
+#seccion7,
+#seccion8,
+#seccion9 {
+  height: 100vh;
+}
+
 .panel {
   position: fixed;
   display: flex;
@@ -130,6 +143,7 @@ body {
 /* btn moon */
 .container-moon {
   position: fixed;
+  z-index: 997;
   left: 1vw;
   bottom: 1vh;
   width: 4rem;
@@ -290,7 +304,7 @@ figcaption {
   visibility: visible;
   object-position: 50% 0;
 }
-.slider-btns{
+.slider-btns {
   position: absolute;
   width: 100%;
   top: 50%;
@@ -312,6 +326,11 @@ figcaption {
 .slider a:hover {
   color: #4d4d4d;
 }
+
+.video:nth-child(2) {
+  width: 100%;
+  margin-bottom: 18rem;
+}
 /* RESPONSIVE PARA CELULARES DE 320PX A 4800PX */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .scroll-top {
@@ -326,6 +345,48 @@ figcaption {
     margin: 1rem auto;
     text-align: center;
   }
-  
 }
-
+@media screen and (min-width: 1024px) {
+  body {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 4rem auto;
+    grid-template-areas:
+      "header header"
+      "main panel";
+  }
+  .header {
+    grid-area: header;
+  }
+  main {
+    grid-area: main;
+  }
+  .panel {
+    grid-area: panel;
+    width: inherit;
+    align-self: start;
+    position: sticky;
+    transform: translate(0, 0);
+    top: 4.3rem;
+    justify-content: flex-start;
+    background-color: var(--second-color);
+  }
+  .menu a {
+    font-size: 1rem;
+    padding: 0.75rem;
+    width: 100%;
+    text-align: right;
+  }
+  .menu a :hover,
+  .menu a.active {
+    color: var(--second-color);
+    background-color: var(--main-color);
+  }
+  .panel-btn {
+    display: none;
+  }
+  .scroll-top {
+    right: inherit;
+    left: calc(4.25rem + 1vw);
+  }
+}
