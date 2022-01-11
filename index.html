@@ -41,7 +41,10 @@
       <a href="#seccion11" data-scroll-spy>Sorteo Digital</a>
       <a href="#seccion12" data-scroll-spy>Responsive Slider</a>
       <a href="#seccion13" data-scroll-spy>Video Inteligente</a>
-      <a href="#seccion14" data-scroll-spy>Seccion 14</a>
+      <a href="#seccion14" data-scroll-spy>Validacion de formularios</a>
+      <a href="#seccion15" data-scroll-spy>Seccion 15</a>
+      <a href="#seccion16" data-scroll-spy>Seccion 16</a>
+      <a href="#seccion17" data-scroll-spy>Seccion 17</a>
     </nav>
   </aside>
   <!-- MAIN -->
@@ -182,7 +185,32 @@
       <video src="assets/video.mp4" loop width="100%" class="video" data-video-inteligente></video>
     </section>
     <section id="seccion14" class="seccion" data-scroll-spy>
-      <h2>seccion14</h2>
+      <h2>Envio de formularios</h2>
+      <form class="contact-form">
+      <legend class="contact-form-legend">Envianos tu comentario</legend>
+      <input type="text" name="name" title="El campo nombre solo acepta letras y espacios" 
+      pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" placeholder="Escribe tu nombre" required>
+      <input type="email" name="email" placeholder="Escribe tu email" title="Email no valido"
+      pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+      <input type="text" name="subject" placeholder="Asunto a tratar" title="El asunto es requerido" required>
+      <textarea name="commets" id="" cols="50" rows="5" data-parent="^.{1,255}$" placeholder="Escribe tus comentarios" title="Tu comentario no debe exceder de los 250 caracteres"required></textarea>
+      <input type="submit" value="Enviar">
+      <div class="contac-form-loader none">
+        <img src="" alt="">
+      </div>
+      <div class="contact-form-response none">
+        <p>Los datos han sido enviados</p>
+      </div>
+      </form>
+    </section>
+    <section id="seccion15" class="seccion" data-scroll-spy>
+      <h2>seccion15</h2>
+    </section>
+    <section id="seccion16" class="seccion" data-scroll-spy>
+      <h2>seccion16</h2>
+    </section>
+    <section id="seccion17" class="seccion" data-scroll-spy>
+      <h2>seccion17</h2>
     </section>
     <a href="lolito.com"></a>
   </main>

@@ -331,6 +331,58 @@ figcaption {
   width: 100%;
   margin-bottom: 18rem;
 }
+/* FORMUALRIO */
+.contact-form{
+  --form-ok-color: #4caf50;
+  --form-error-color: #f44336;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  padding: .5rem 0;
+}
+.contact-form > *{
+  display: block;
+  width: 90%;
+  margin: .75rem  auto;
+  border-radius: 5px;
+  font-family: var(--font-size);
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  outline:none;
+}
+textarea{
+  resize: none;
+  /* max-width: ; */
+}
+.contact-form [type="submit"]{
+  width: 40%;
+  border-radius: 2rem;
+  /* background-color: var(--main-color); */
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.contact-form-legend,
+.contact-form-response{
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #222;
+}
+.contact-form :required:valid{
+  border: 1.9px solid var(--form-ok-color);
+}
+.contact-form :required:invalid{
+  border: 1.9px solid var(--form-error-color);
+}
+.none{
+  /* display: none; */
+}
 /* RESPONSIVE PARA CELULARES DE 320PX A 4800PX */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .scroll-top {
@@ -389,4 +441,5 @@ figcaption {
     right: inherit;
     left: calc(4.25rem + 1vw);
   }
+  
 }
