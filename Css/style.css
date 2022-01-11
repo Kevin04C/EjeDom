@@ -341,7 +341,6 @@ figcaption {
   background-color: var(--main-color);
   border-radius: 10px;
   padding: .5rem 0;
-
 }
 .contact-form > *{
   display: block;
@@ -376,10 +375,10 @@ textarea{
   color: #222;
 }
 .contact-form :required:valid{
-  border: 1.5px solid var(--form-ok-color);
+  border: 1.9px solid var(--form-ok-color);
 }
 .contact-form :required:invalid{
-  border: 1.5px solid var(--form-error-color);
+  border: 1.9px solid var(--form-error-color);
 }
 .none{
   /* display: none; */
@@ -442,4 +441,5 @@ textarea{
     right: inherit;
     left: calc(4.25rem + 1vw);
   }
+  
 }
