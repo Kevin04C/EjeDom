@@ -9,7 +9,7 @@ export default function videoInteligente() {
         element.target.pause();
       }
       window.addEventListener('visibilitychange',(e)=>{
-        document.visibilityState ? element.target.play() : element.target.pause(); 
+        document.visibilityState ? element.target.play() : element.target.pause();
       });
     });
   };

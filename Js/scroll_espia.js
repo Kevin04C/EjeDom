@@ -3,7 +3,6 @@ export default function scrollSpy() {
   let callback = (entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        console.log(entry.target);
         let enlace = document.querySelector(
           `[href="#${entry.target.getAttribute("id")}"]`
         );

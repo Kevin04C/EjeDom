@@ -15,6 +15,7 @@ import sorteo from "./sorteo_digital.js";
 import slider from "./carrusel.js";
 import scrollSpy from "./scroll_espia.js";
 import videoInteligente from "./video_inteligente.js";
+import contactFormValidations from "./validaciones_formulario.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   hamburgerMenu(".panel-btn", ".panel", ".menu a");
@@ -23,7 +24,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
   countdown(
     "countdown",
     "April 12, 2022 00:59:59",
-    "Feliz Año Nuevo PUTOSSSSS🎁❤️!!"
+    "Happy birthday teacher🎁❤️!!"
   );
   scrollTopButtom(".scroll-top");
   responsiveMedia(
@@ -48,7 +49,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
   sorteo("#btn_sorteo", ".player");
   slider();
   scrollSpy();
-  videoInteligente(); 
+  videoInteligente();
+  contactFormValidations();
 });
 
 document.addEventListener("keypress", (e) => {
