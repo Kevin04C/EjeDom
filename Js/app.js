@@ -16,6 +16,7 @@ import slider from "./carrusel.js";
 import scrollSpy from "./scroll_espia.js";
 import videoInteligente from "./video_inteligente.js";
 import contactFormValidations from "./validaciones_formulario.js";
+import speech from "./speech.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   hamburgerMenu(".panel-btn", ".panel", ".menu a");
@@ -42,7 +43,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
   );
   responsiveTester("responsive-tester");
   userDevaiceInfo("user-device");
-  deteccionConexion();
   Webcam("webcam");
   getGeolocation("geolocation");
   searchFilter(".card-filter", ".card");
@@ -57,4 +57,6 @@ document.addEventListener("keypress", (e) => {
   shortcuts(e);
   moveBall(e, ".ball", ".stage");
 });
+deteccionConexion();
 darkMode(".container-moon", "dark-mode");
+speech();

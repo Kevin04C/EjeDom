@@ -399,6 +399,35 @@ textarea {
 .none {
   display: none;
 }
+/* TEXTO A VOZ */
+.container__voice{
+  background: #ededed;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.container__voice__input{
+  border: none;
+  width: 90%;
+  max-width: 600px;
+  font-size: 1rem;
+  outline: none;
+  padding: 1rem;
+}
+.container__voice__input:last-child{
+  /* border: 1px solid #000; */
+  background-color: rgb(226, 226, 226);
+  /* border: 1px solid #000; */
+  width: 300px;
+  max-width: 50%;
+  border-radius: 5px;
+  outline: none;
+  padding: .5rem 2rem;
+  cursor: pointer;
+}
 /* RESPONSIVE PARA CELULARES DE 320PX A 4800PX */
 @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .scroll-top {

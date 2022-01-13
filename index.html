@@ -42,7 +42,7 @@
       <a href="#seccion12" data-scroll-spy>Responsive Slider</a>
       <a href="#seccion13" data-scroll-spy>Video Inteligente</a>
       <a href="#seccion14" data-scroll-spy>Validacion de formularios</a>
-      <a href="#seccion15" data-scroll-spy>Seccion 15</a>
+      <a href="#seccion15" data-scroll-spy>Texto a Voz</a>
       <a href="#seccion16" data-scroll-spy>Seccion 16</a>
       <a href="#seccion17" data-scroll-spy>Seccion 17</a>
     </nav>
@@ -143,19 +143,19 @@
     <section id="seccion11" class="seccion sorteo">
       <h2>Sorteo Digital</h2>
       <h3 style="color: #fff;">Participantes</h2>
-      <ul class="players">
-        <li class="player">JAVASCRIPT</li>
-        <li class="player">PHP</li>
-        <li class="player">JAVA</li>
-        <li class="player">C</li>
-        <li class="player">PYTHON</li>
-        <li class="player">RUBY</li>
-        <li class="player">GO</li>
-        <li class="player">VISUAL STUDIO CODE</li>
-        <li class="player">RUST</li>
-        <li class="player">PERL</li>
-      </ul>
-      <button type="button" id="btn_sorteo">Generar ganador</button>
+        <ul class="players">
+          <li class="player">JAVASCRIPT</li>
+          <li class="player">PHP</li>
+          <li class="player">JAVA</li>
+          <li class="player">C</li>
+          <li class="player">PYTHON</li>
+          <li class="player">RUBY</li>
+          <li class="player">GO</li>
+          <li class="player">VISUAL STUDIO CODE</li>
+          <li class="player">RUST</li>
+          <li class="player">PERL</li>
+        </ul>
+        <button type="button" id="btn_sorteo">Generar ganador</button>
     </section>
     <section id="seccion12" class="seccion" data-scroll-spy>
       <h2>Responsive Slider</h2>
@@ -186,25 +186,35 @@
     </section>
     <section id="seccion14" class="seccion" data-scroll-spy>
       <h2>Envio de formularios</h2>
-      <form class="contact-form" action="https://formsubmit.co/kevincespedesalvares@gmail.com" method="POST" target="_BLANK">
-      <legend class="contact-form-legend">Envianos tu comentario</legend>
-      <input type="text" name="name"  title="El campo nombre solo acepta letras y espacios" 
-      pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" placeholder="Escribe tu nombre" required>
-      <input type="email" name="email"  placeholder="Escribe tu email" title="Email no valido"
-      pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
-      <input type="text" name="subject" placeholder="Asunto a tratar" title="El asunto es requerido" required>
-      <textarea name="commets"  cols="50" rows="5" data-pattern="^.{1,255}$" placeholder="Escribe tus comentarios" title="Tu comentario no debe exceder de los 250 caracteres"required></textarea>
-      <input type="submit" value="Enviar">
-      <div class="contac-form-loader none">
-        <img src="assets/circle.svg" alt="loader">
-      </div>
-      <div class="contact-form-response none">
-        <p>Los datos han sido enviados</p>
-      </div>
+      <form class="contact-form" action="https://formsubmit.co/kevincespedesalvares@gmail.com" method="POST"
+        target="_BLANK">
+        <legend class="contact-form-legend">Envianos tu comentario</legend>
+        <input type="text" name="name" title="El campo nombre solo acepta letras y espacios"
+          pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" placeholder="Escribe tu nombre" required>
+        <input type="email" name="email" placeholder="Escribe tu email" title="Email no valido"
+          pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+        <input type="text" name="subject" placeholder="Asunto a tratar" title="El asunto es requerido" required>
+        <textarea name="commets" cols="50" rows="5" data-pattern="^.{1,255}$" placeholder="Escribe tus comentarios"
+          title="Tu comentario no debe exceder de los 250 caracteres" required></textarea>
+        <input type="submit" value="Enviar">
+        <div class="contac-form-loader none">
+          <img src="assets/circle.svg" alt="loader">
+        </div>
+        <div class="contact-form-response none">
+          <p>Los datos han sido enviados</p>
+        </div>
       </form>
     </section>
     <section id="seccion15" class="seccion" data-scroll-spy>
-      <h2>seccion15</h2>
+      <h2>Texto a Voz</h2>
+      <div class="container__voice">
+        <select name="" id="select">
+          <option value="">---Seleciona una Voz---</option>
+        </select>
+        <input type="text" id="text"  class="container__voice__input">
+        <input type="button" id="button-hablar" class="container__voice__input" value="Hablar">
+      </div>
+
     </section>
     <section id="seccion16" class="seccion" data-scroll-spy>
       <h2>seccion16</h2>
